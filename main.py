@@ -11,7 +11,7 @@ from pycaret import classification as cl
 from pycaret import regression as reg
 from pycaret import clustering as cu
 
-st.write("Password:", st.secrets["db_password"])
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 with st.sidebar:
     st.title('__Automated Machine Learning WebApp__')
