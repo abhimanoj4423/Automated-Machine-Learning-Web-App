@@ -1,0 +1,8 @@
+pandas==2.1.1
+streamlit==1.25.0
+streamlit-pandas-profiling
+ydata-profiling
+pycaret==3.3.0
+streamlit_extras
+Jinja2==3.1.2
+streamlit_option_menu
