@@ -5,4 +5,4 @@ pycaret==3.3.0
 ydata_profiling==4.7.0
 streamlit_option_menu
 joblib
-phik<0.13,>=0.11.1
+phik<0.13
