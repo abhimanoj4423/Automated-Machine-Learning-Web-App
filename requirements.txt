@@ -1,8 +1,8 @@
 phik
+joblib
 pandas
 streamlit
 streamlit-ydata-profiling
 pycaret
 ydata_profiling
 streamlit_option_menu
-pickle
