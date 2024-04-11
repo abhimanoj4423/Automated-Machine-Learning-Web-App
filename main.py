@@ -5,7 +5,7 @@ import joblib
 
 from streamlit_option_menu import option_menu
 from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+from streamlit_ydata_profiling import st_profile_report
 
 from pycaret import classification as cl
 from pycaret import regression as reg
