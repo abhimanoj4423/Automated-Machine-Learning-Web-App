@@ -4,3 +4,4 @@ streamlit-pandas-profiling
 pycaret==3.3.0
 ydata_profiling==4.7.0
 streamlit_option_menu
+phik==0.12.4
