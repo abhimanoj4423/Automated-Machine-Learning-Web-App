@@ -1,7 +1,7 @@
 pandas==2.1.1
 streamlit==1.25.0
-streamlit-pandas-profiling
+streamlit-ydata-profiling
 pycaret==3.3.0
 ydata_profiling==4.7.0
 streamlit_option_menu
-phik==0.12.4
+joblib
