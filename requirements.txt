@@ -1,7 +1,7 @@
 phik
 pandas
 streamlit
-streamlit-pandas-profiling
+streamlit-ydata-profiling
 pycaret
 ydata_profiling
 streamlit_option_menu
