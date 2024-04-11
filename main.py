@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 import pandas as pd
-import joblib
 
 from streamlit_option_menu import option_menu
 from ydata_profiling import ProfileReport
@@ -99,10 +98,3 @@ if choice == "Prediction":
     if test:
         df1 = pd.read_csv(test, index_col=None)
         df1.to_csv("predicted.csv", index=False)
-        with open("best_model.pkl", 'rb') as f:
-            clf = joblib.load(f)
-        y_pred = clf.predict(df1)
-        pred = pd.concat([df1, y_pred], axis=1)
-        if st.button("Predict"):
-            st.dataframe(pred)
-            st.download_button("Download Dataset", pred.to_csv(), "predicted.csv")
