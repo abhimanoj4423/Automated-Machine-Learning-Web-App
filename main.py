@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import pandas as pd
-import joblib
+import pickle
 
 from streamlit_option_menu import option_menu
 from ydata_profiling import ProfileReport
@@ -100,7 +100,7 @@ if choice == "Prediction":
         df1 = pd.read_csv(test, index_col=None)
         df1.to_csv("predicted.csv", index=False)
         with open("best_model.pkl", 'rb') as f:
-            clf = joblib.load(f)
+            clf = pickle.load(f)
         y_pred = clf.predict(df1)
         pred = pd.concat([df1, y_pred], axis=1)
         if st.button("Predict"):
