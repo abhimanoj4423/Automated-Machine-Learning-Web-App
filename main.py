@@ -11,6 +11,8 @@ from pycaret import classification as cl
 from pycaret import regression as reg
 from pycaret import clustering as cu
 
+st.write("Password:", st.secrets["db_password"])
+
 with st.sidebar:
     st.title('__Automated Machine Learning WebApp__')
     choice = option_menu(menu_title=None,
