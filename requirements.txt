@@ -1,6 +1,6 @@
 joblib
 pandas==2.1.1
-streamlit==1.25.0
+streamlit
 streamlit-ydata-profiling==0.2.1
 ydata-profiling
 pycaret==3.3.0
