@@ -13,7 +13,7 @@ from pycaret import clustering as cu
 
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 type = st.secrets["TYPE"]
-ID = st.secrets["ID"]
+id = st.secrets["ID"]
 
 with st.sidebar:
     st.title('__Automated Machine Learning WebApp__')
