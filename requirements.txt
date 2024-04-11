@@ -1,4 +1,3 @@
-joblib
 pandas==2.1.1
 streamlit
 streamlit-ydata-profiling==0.2.1
