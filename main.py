@@ -57,6 +57,7 @@ if choice == "Model Building":
             compare_df = reg.pull()
             reg.save_model(best_model, 'best_model')
             st.dataframe(compare_df)
+            st.text_area("    ", value=best_model)
 
     if choice1 == 'Classification':
         st.title('Classification Model Building')
