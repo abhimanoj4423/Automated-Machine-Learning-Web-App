@@ -53,10 +53,11 @@ if choice == "Model Building":
             reg.setup(df, target=target)
             setup_df = reg.pull()
             st.dataframe(setup_df)
-            best_model = reg.compare_models()
+            best_model = reg.compare_models(budget_time = 0.5)
             compare_df = reg.pull()
             reg.save_model(best_model, 'best_model')
             st.dataframe(compare_df)
+            print(best)
 
     if choice1 == 'Classification':
         st.title('Classification Model Building')
@@ -66,10 +67,11 @@ if choice == "Model Building":
             cl.setup(df, target=target)
             setup_df = cl.pull()
             st.dataframe(setup_df)
-            best_model = cl.compare_models()
+            best_model = cl.compare_models(budget_time = 0.5)
             compare_df = cl.pull()
             cl.save_model(best_model, 'best_model')
             st.dataframe(compare_df)
+            print(best)
 
     if choice1 == 'Clustering':
         empty = []
@@ -88,6 +90,7 @@ if choice == "Model Building":
             compare_df = cu.pull()
             cu.save_model(best_model, 'best_model')
             st.dataframe(compare_df)
+            print(best)
 
 if choice == "Download Model":
     st.title('Download the Model')
