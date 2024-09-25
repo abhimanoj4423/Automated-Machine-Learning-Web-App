@@ -7,3 +7,4 @@ ydata-profiling
 pycaret==3.3.2
 streamlit_option_menu
 dtale
+google-generativeai
